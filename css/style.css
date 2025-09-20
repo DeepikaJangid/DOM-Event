@@ -1,0 +1,265 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #E2D8D3;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #B6CEB4;
+    width: 100%;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 888;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+nav {
+    padding: 20px;
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.inner-nav {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    width: 65%;
+}
+
+#hamburger {
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 400ms ease-in-out;
+    margin-left: 20px;
+}
+
+#hamburger:hover {
+    transform: scale(1.02);
+}
+
+#menu-list {
+    transition: opacity 500ms ease-in-out, visibility 500ms ease-in-out;
+    transition: transform 400ms ease-in-out;
+}
+
+.menu-ul {
+    transform: scale(1.07);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.inner-nav ul {
+    list-style: none;
+    display: flex;
+    align-self: flex-start;
+    flex-grow: 1;
+}
+
+.inner-nav ul li {
+    margin-left: 20px;
+}
+
+.inner-nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+.date,
+.time {
+    color: #333;
+    font-weight: 600;
+}
+
+/* header ends */
+
+.details {
+    padding: 30px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+/* carousel */
+.carousel {
+    max-width: 800px;
+    margin: auto;
+    height: 500px;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.carou-images {
+    padding: 10px 10px;
+    height: 100%;
+    width: 100%;
+    flex-shrink: 0;
+    transform: translateX(0px);
+    transition: 1s ease-in-out;
+}
+
+.carou-images img {
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+}
+
+/* Accordion */
+
+.accordian {
+    margin: 10px 0px;
+    padding: 0px 15px;
+}
+
+.accord-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    font-size: 15px;
+    background-color: #B6CEB4;
+    font-weight: 600;
+}
+
+.accord-title:hover {
+    cursor: pointer;
+    box-shadow: 0px -2px 7px rgb(182, 181, 181);
+}
+
+.accord-title i {
+    transition: 600ms;
+    transform: rotate(0deg);
+}
+
+.accord-content {
+    padding: 0px 10px;
+    line-height: 22px;
+    height: 0;
+    overflow: hidden;
+    transition: 500ms;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 2px;
+}
+
+.accord-content::-webkit-scrollbar {
+    display: none;
+}
+
+.open {
+    transition: 300ms;
+    border-top: 2px solid saddlebrown;
+}
+
+.accordion-outer {
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+/* Tabs */
+.tabs {
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.tabs h2 {
+    width: 200px;
+    margin: 0px auto 30px;
+}
+
+.tabs .tab-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.tabs .tab-buttons button {
+    background-color: #B6CEB4;
+    border: none;
+    padding: 10px 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.tabs .tab-content {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    display: none;
+    border-radius: 10px;
+}
+
+/* Contact Form */
+.contact-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #E2D8D3;
+    border: none;
+    padding: 12px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+footer {
+    width: 100%;
+    background-color: #E2D8D3;
+}
+
+.inner-footer {
+    margin: auto;
+    max-width: 1400px;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

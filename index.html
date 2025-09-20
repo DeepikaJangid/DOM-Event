@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Home - Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <h1>Jane Doe</h1>
+            <div class="inner-nav">
+                <ul id="menu-list" class="menu-ul">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+
+                <div class="full-date">
+                    <span class="date"></span>
+                    <span class="month"></span>
+                    <span class="year"></span>
+                </div>
+                <!-- date -->
+
+                <div class="time">
+                    <span class="hour"></span>
+                    <span class="seconds"></span>
+                </div>
+                <!-- time -->
+                <i id="hamburger" class="fa-solid fa-bars"></i>
+
+            </div>
+            <!-- inner-nav -->
+        </nav>
+    </header>
+
+    <section class="carousel">
+        <div class="carou-images">
+            <img src="./images/slider1.png" alt="">
+        </div>
+
+        <div class="carou-images">
+            <img src="./images/slider2.png" alt="">
+        </div>
+
+        <div class="carou-images">
+            <img src="./images/slider3.png" alt="">
+        </div>
+
+        <div class="carou-images">
+            <img src="./images/slider4.png" alt="">
+        </div>
+
+        <div class="carou-images">
+            <img src="./images/slider5.png" alt="">
+        </div>
+
+        <div class="carou-images">
+            <img src="./images/slider6.png" alt="">
+        </div>
+        <!-- <p>Slider Placeholder</p> -->
+    </section>
+    <!-- carousel -->
+
+    <!-- <section class="details">
+        <h2>About Me</h2>
+        <p>I'm a developer focused on clean, accessible, and performant web apps. <a href="about.html">Read more →</a>
+        </p>
+    </section>
+
+    <section class="details">
+        <h2>Recent Projects</h2>
+        <p>See what I’ve been building lately. <a href="projects.html">View Projects →</a></p>
+    </section>
+
+    <section class="details">
+        <h2>Skills Preview</h2>
+        <p>I work with HTML, CSS, JavaScript, React, and more. <a href="skills.html">Explore Skills →</a></p>
+    </section> -->
+
+    <section class="accordion-outer" id="faq">
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="accordian">
+            <div class="accord-title">
+                <h3>What services do you offer?</h3>
+                <i class="fas fa-chevron-down icon"></i>
+            </div>
+            <div class="accord-content">
+                <p>I offer full-stack web development, UI/UX design, and consulting for web projects. Lorem ipsum dolor
+                    sit amet consectetur, adipisicing elit. Commodi ex praesentium atque tenetur sit voluptatibus beatae
+                    ea quibusdam nihil ducimus eos, nemo expedita cupiditate velit explicabo incidunt minus. Repellat,
+                    earum.</p>
+            </div>
+            <!-- accord-content -->
+        </div>
+
+
+        <div class="accordian">
+            <div class="accord-title">
+                <h3>What services do you offer?</h3>
+                <i class="fas fa-chevron-down icon"></i>
+            </div>
+            <div class="accord-content">
+                <p>I offer full-stack web development, UI/UX design, and consulting for web projects.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur alias, quos commodi dolor,
+                    quidem adipisci a rem vitae assumenda accusamus porro asperiores neque libero numquam deleniti sint
+                    dolorum. Molestiae, fugit.
+                </p>
+            </div>
+            <!-- accord-content -->
+        </div>
+
+        <div class="accordian">
+            <div class="accord-title">
+                <h3>What services do you offer?</h3>
+                <i class="fas fa-chevron-down icon"></i>
+            </div>
+            <div class="accord-content">
+                <p>I offer full-stack web development, UI/UX design, and consulting for web projects. Lorem ipsum dolor
+                    sit amet consectetur adipisicing elit. Adipisci voluptatibus nihil id aliquam mollitia sit dolorem
+                    iste qui nulla dolores, quis expedita reprehenderit dolore autem illo doloribus vero possimus.
+                    Eaque?</p>
+            </div>
+            <!-- accord-content -->
+        </div>
+    </section>
+    <!-- accordian section -->
+
+    <section class="tabs">
+        <h2>Services I Offer</h2>
+        <div class="tab-buttons">
+            <button data-tab="tab1">Web Development</button>
+            <button data-tab="tab2">UI/UX Design</button>
+            <button data-tab="tab3">Consulting</button>
+        </div>
+        <!-- tab buttons -->
+        <div class="tab-content" id="tab1">I create fast, scalable, and responsive websites.</div>
+        <div class="tab-content" id="tab2">Designing user-friendly interfaces with accessibility in mind.</div>
+        <div class="tab-content" id="tab3">Helping startups make the right tech decisions.</div>
+        <!-- tab content -->
+    </section>
+    <!-- tabs section -->
+
+
+    <footer>
+        <div class="inner-footer">
+            <p>&copy; 2025 Jane Doe</p>
+        </div>
+    </footer>
+
+
+    <!-- script -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
