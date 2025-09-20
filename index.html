@@ -8,6 +8,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 
 <body>
@@ -17,13 +22,12 @@
             <h1>Jane Doe</h1>
             <div class="inner-nav">
                 <ul id="menu-list" class="menu-ul">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="skills.html">Skills</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
-
 
                 <div class="full-date">
                     <span class="date"></span>
@@ -44,7 +48,8 @@
         </nav>
     </header>
 
-    <section class="carousel">
+    <section id="home" class="carousel">
+
         <div class="carou-images">
             <img src="./images/slider1.png" alt="">
         </div>
@@ -68,27 +73,66 @@
         <div class="carou-images">
             <img src="./images/slider6.png" alt="">
         </div>
-        <!-- <p>Slider Placeholder</p> -->
     </section>
     <!-- carousel -->
 
-    <!-- <section class="details">
+    <section id="about" class="details">
         <h2>About Me</h2>
-        <p>I'm a developer focused on clean, accessible, and performant web apps. <a href="about.html">Read more →</a>
-        </p>
+        <p>I'm a passionate web developer with a focus on creating clean, accessible, and high-performance web
+            applications. I believe that web development is not just about building websites, but about crafting digital
+            experiences that users love. With a keen eye for detail, I strive to ensure that each project I work on is
+            both visually appealing and functionally flawless.</p>
+        <p>With a background in both front-end and back-end development, I have experience in HTML, CSS, JavaScript,
+            React, and more. Whether I'm working on a small personal project or collaborating with a team on a
+            large-scale web app, I always aim to build solutions that are scalable, user-friendly, and efficient.</p>
     </section>
 
-    <section class="details">
+
+    <section class="projects">
         <h2>Recent Projects</h2>
-        <p>See what I’ve been building lately. <a href="projects.html">View Projects →</a></p>
+        <p>Here are some of the exciting projects I've been working on lately. From dynamic web applications to
+            beautiful user interfaces, I love creating projects that solve real-world problems. Check out the work I've
+            done and let me know if you'd like to collaborate!</p>
+        <ul>
+            <li><strong>Portfolio Website</strong> - A responsive personal portfolio to showcase my work and skills.
+                Built with HTML, CSS, and JavaScript.
+            <li><strong>Task Manager App</strong> - A task management app built using React and Redux. Allows users to
+                track their tasks and stay organized.</li>
+            <li><strong>E-commerce Website</strong> - A fully functional e-commerce site with user authentication,
+                product catalog, and checkout system. Built with React and Node.js. 
+                <span class="popUp">Know More..
+                    <div id="overlay">
+                        <p></p>
+                        <button id="code">View Code</button>
+                        <button id="live">Live</button>
+                    </div>
+                </span>
+            </ul>
     </section>
 
-    <section class="details">
-        <h2>Skills Preview</h2>
-        <p>I work with HTML, CSS, JavaScript, React, and more. <a href="skills.html">Explore Skills →</a></p>
-    </section> -->
 
-    <section class="accordion-outer" id="faq">
+    <section id="skills" class="details">
+        <h2>Skills Preview</h2>
+        <p>I specialize in building modern web applications using a combination of powerful tools and technologies.
+            Here's a quick overview of the skills I bring to the table:</p>
+        <ul>
+            <li><strong>HTML & CSS</strong> - Semantic HTML, responsive design with CSS, and CSS frameworks like
+                Bootstrap and TailwindCSS.</li>
+            <li><strong>JavaScript</strong> - Advanced JavaScript, ES6+, DOM manipulation, and asynchronous programming
+                with promises and async/await.</li>
+            <li><strong>React.js</strong> - Building dynamic and performant user interfaces with React, React Router,
+                and state management with Redux.</li>
+            <li><strong>Version Control</strong> - Experience with Git, GitHub, and GitLab for collaborative development
+                and version tracking.</li>
+            <li><strong>Node.js & Express</strong> - Server-side development using Node.js and Express to build APIs and
+                handle server-side logic.</li>
+            <li><strong>Databases</strong> - Experience with SQL (PostgreSQL) and NoSQL (MongoDB) databases for data
+                management.</li>
+        </ul>
+    </section>
+
+
+    <section id="faq" class="accordion-outer">
         <h2>Frequently Asked Questions</h2>
 
         <div class="accordian">
@@ -101,10 +145,14 @@
                     sit amet consectetur, adipisicing elit. Commodi ex praesentium atque tenetur sit voluptatibus beatae
                     ea quibusdam nihil ducimus eos, nemo expedita cupiditate velit explicabo incidunt minus. Repellat,
                     earum.</p>
+                <p>I offer full-stack web development, UI/UX design, and consulting for web projects.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur alias, quos commodi dolor,
+                    quidem adipisci a rem vitae assumenda accusamus porro asperiores neque libero numquam deleniti sint
+                    dolorum. Molestiae, fugit.
+                </p>
             </div>
             <!-- accord-content -->
         </div>
-
 
         <div class="accordian">
             <div class="accord-title">
@@ -112,6 +160,11 @@
                 <i class="fas fa-chevron-down icon"></i>
             </div>
             <div class="accord-content">
+                <p>I offer full-stack web development, UI/UX design, and consulting for web projects.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur alias, quos commodi dolor,
+                    quidem adipisci a rem vitae assumenda accusamus porro asperiores neque libero numquam deleniti sint
+                    dolorum. Molestiae, fugit.
+                </p>
                 <p>I offer full-stack web development, UI/UX design, and consulting for web projects.
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur alias, quos commodi dolor,
                     quidem adipisci a rem vitae assumenda accusamus porro asperiores neque libero numquam deleniti sint
@@ -131,26 +184,112 @@
                     sit amet consectetur adipisicing elit. Adipisci voluptatibus nihil id aliquam mollitia sit dolorem
                     iste qui nulla dolores, quis expedita reprehenderit dolore autem illo doloribus vero possimus.
                     Eaque?</p>
+                <p>I offer full-stack web development, UI/UX design, and consulting for web projects.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur alias, quos commodi dolor,
+                    quidem adipisci a rem vitae assumenda accusamus porro asperiores neque libero numquam deleniti sint
+                    dolorum. Molestiae, fugit.
+                </p>
+                <p>I offer full-stack web development, UI/UX design, and consulting for web projects.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur alias, quos commodi dolor,
+                    quidem adipisci a rem vitae assumenda accusamus porro asperiores neque libero numquam deleniti sint
+                    dolorum. Molestiae, fugit.
+                </p>
             </div>
             <!-- accord-content -->
         </div>
     </section>
-    <!-- accordian section -->
+    <!-- faq section -->
 
-    <section class="tabs">
+    <section id="services" class="tabs">
         <h2>Services I Offer</h2>
         <div class="tab-buttons">
-            <button data-tab="tab1">Web Development</button>
-            <button data-tab="tab2">UI/UX Design</button>
-            <button data-tab="tab3">Consulting</button>
+            <button class="tabBtn" data-tab="tab1">Web Development</button>
+            <button class="tabBtn" data-tab="tab2">UI/UX Design</button>
+            <button class="tabBtn" data-tab="tab3">Consulting</button>
         </div>
         <!-- tab buttons -->
-        <div class="tab-content" id="tab1">I create fast, scalable, and responsive websites.</div>
-        <div class="tab-content" id="tab2">Designing user-friendly interfaces with accessibility in mind.</div>
-        <div class="tab-content" id="tab3">Helping startups make the right tech decisions.</div>
+        <div class="tab-content" id="tab1">
+            I specialize in creating fast, scalable, and responsive websites tailored to your specific needs. Whether
+            you’re building a simple landing page or a complex web application, I ensure that your website performs
+            seamlessly across all devices and platforms.
+
+            I use modern technologies such as HTML5, CSS3, JavaScript, React, and Node.js to build dynamic, interactive,
+            and visually appealing websites. My goal is to create web experiences that are not only functional but also
+            engaging and user-friendly.
+
+            Custom Web Development: Tailored solutions that align with your business objectives.
+
+            Responsive Design: Websites that look and function great on all screen sizes.
+
+            E-commerce: Build scalable online stores with easy-to-use interfaces.
+
+            API Integrations: Seamlessly integrate third-party services to enhance your site’s functionality.
+
+            Performance Optimization: Ensuring fast load times and smooth navigation for a better user experience.
+        </div>
+
+        <div class="tab-content" id="tab2">
+            Great design isn’t just about making things look good – it’s about making
+            sure your users have a seamless, intuitive experience. I create user-centered designs that blend creativity
+            with usability, focusing on every detail to ensure your website or app is easy to navigate and visually
+            captivating.
+
+            From wireframing to prototyping, I design with your users in mind, making sure that they can easily find
+            what they need, leading to higher engagement and conversion rates.
+
+            User Research: Understanding your audience to craft a user experience that resonates.
+
+            Wireframes & Prototypes: Iterative design processes to ensure the best outcome.
+
+            Responsive Design: Creating designs that are mobile-friendly and adaptive to various screen sizes.
+
+            Interaction Design: Adding intuitive elements to keep your users engaged and satisfied.
+
+            Brand Consistency: Ensuring the design aligns with your brand’s identity and values.
+        </div>
+
+        <div class="tab-content" id="tab3">
+            Starting a new project or launching a startup can be overwhelming, especially when it comes to choosing the
+            right technologies and development strategies. With my consulting services, I help guide you through the
+            complexities of web development, from initial concept to full-scale deployment.
+
+            I offer strategic advice on technology choices, team structure, project management, and more. Together,
+            we’ll craft a plan that aligns with your business goals and ensures long-term success.
+
+            Tech Stack Selection: Helping you choose the best tools for your specific project needs.
+
+            Project Planning & Strategy: Designing a roadmap to bring your project to life on time and within budget.
+
+            Agile Development Practices: Implementing agile methodologies to deliver results quickly and iteratively.
+
+            Team Training & Mentorship: Empowering your team with the skills they need to succeed.
+
+            Troubleshooting & Optimization: Providing expert advice to solve technical issues and improve your
+            systems.Helping startups make the right tech decisions.
+
+        </div>
         <!-- tab content -->
     </section>
     <!-- tabs section -->
+
+    <section id="contact" class="contact-form-section">
+        <h2>Contact Me</h2>
+        <form class="contact-form" action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required />
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required />
+            </div>
+            <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" placeholder="Write your message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </section>
 
 
     <footer>
@@ -159,8 +298,6 @@
         </div>
     </footer>
 
-
-    <!-- script -->
     <script src="js/script.js"></script>
 
 </body>

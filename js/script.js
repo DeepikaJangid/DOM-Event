@@ -52,8 +52,6 @@ let car = document.querySelector('.carousel');
 let carousel = car.children
 let temp = 0;
 
-
-
 setInterval(
     () => {
         for (let img of carousel) {
@@ -105,6 +103,32 @@ for (let title of accordTitle) {
         }
     )
 }
+// accordian
+
+const tabButtons = document.querySelectorAll('.tabBtn')
+
+for (let btn of tabButtons) {
+    btn.addEventListener(
+        'click',
+        () => {
+
+        }
+    )
+}
+
+// pop up
+const popUp = document.querySelector('.popUp');
+const overlay = document.querySelector('#overlay')
+console.log(popUp);
+
+popUp.addEventListener(
+    'click',
+    () => {
+        overlay.style.opacity = '1';
+        overlay.style.visibility = 'visible';
+    }
+)
+
 
 
 
